@@ -1,0 +1,26 @@
+.featureTab{
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.featureTab img{
+    height: 35px;
+    width: 35px;
+}
+.featureTab h2{
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 12px;
+    
+}
+.featureTab:hover{
+    transform: translateY(-10px);
+}
