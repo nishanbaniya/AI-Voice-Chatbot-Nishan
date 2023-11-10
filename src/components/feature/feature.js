@@ -2,7 +2,6 @@ import React from "react";
 import FeatureTab from "../featureTab/FeatureTab";
 import "./feature.css";
 import gpt from "../../assets/images/gpt.png";
-import ai from "../../assets/images/ai.png";
 import dalle from "../../assets/images/dalle.png";
 import smartai from "../../assets/images/smartAI.png";
 
@@ -11,14 +10,6 @@ const feature = () => {
     <div className="container">
         <h2 className="h2">Features</h2>
         <div className="featureList">
-      <FeatureTab
-      featureImg={ai}
-        title={"Artificial Intelligence"}
-        description={
-          'Artificial intelligence is the science of making machines that can think like humans. It can do things that are considered "smart."'
-        }
-        bgColor='#9DEFC9'
-      />
       <FeatureTab
       featureImg={gpt}
         title="Chat GPT"
