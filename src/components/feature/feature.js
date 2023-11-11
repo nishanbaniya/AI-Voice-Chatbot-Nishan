@@ -5,7 +5,7 @@ import gpt from "../../assets/images/gpt.png";
 import dalle from "../../assets/images/dalle.png";
 import smartai from "../../assets/images/smartAI.png";
 
-const feature = () => {
+const Feature = () => {
   return (
     <div className="container">
         <h2 className="h2">Features</h2>
@@ -34,4 +34,4 @@ const feature = () => {
   );
 };
 
-export default feature;
+export default Feature;
