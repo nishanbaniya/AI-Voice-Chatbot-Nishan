@@ -1,18 +1,21 @@
 import React from "react";
 import Button from "./components/button/Button"
-import "./components/button/help.png"
+import imageSource1 from "./components/button/help.png"
+import imageSource2 from "./components/button/first.png"
 
 function App() {
+  
   return (
     <>
     Hi
+
     <div style={{display:"flex", alignItems:"center", justifyContent:"center", gap:"10px"}}>
-    <Button variant="success" size="lg" photo="help.png"> Success Button </Button>
-    <Button variant="danger" size="sm"> Danger Button </Button>
-    <Button variant="warning"> Warning Button </Button>
-    <Button variant="primary"> Primary Button </Button>
-    <Button variant="secondary"> Secondary Button </Button>
-    <Button variant="info"> Info Button </Button>
+
+    <Button bgcolor="purple" btext="Warning Button" bwidth="20%" bheight="60px" imgSrc={imageSource1} imgHeight="25px" imgWidth="25px" > </Button>
+    <Button bgcolor="grey" btext="Primary" imgSrc={imageSource2}>  </Button>
+    <Button bgcolor="green" btext="Secondary"></Button>
+    <Button bgcolor="red" btext="Info">  </Button>
+    <Button bgcolor="black" btext="Alert">  </Button>
     </div>
     </>
   );
