@@ -11,10 +11,10 @@ function App() {
 
     <div style={{display:"flex", alignItems:"center", justifyContent:"center", gap:"10px"}}>
 
-    <Button bgcolor="purple" btext="Warning Button" bwidth="20%" bheight="60px" imgSrc={imageSource1} imgHeight="25px" imgWidth="25px" > </Button>
+    <Button bgcolor="purple" btext="Warning Button" bwidth="50%" bheight="60px" imgSrc={imageSource1} imgHeight="25px" imgWidth="25px" > </Button>
     <Button bgcolor="grey" btext="Primary" imgSrc={imageSource2}>  </Button>
     <Button bgcolor="green" btext="Secondary"></Button>
-    <Button bgcolor="red" btext="Info">  </Button>
+    <Button bgcolor="red" btext="Info" padding="10px 30px" hoverColor="black">  </Button>
     <Button bgcolor="black" btext="Alert">  </Button>
     </div>
     </>

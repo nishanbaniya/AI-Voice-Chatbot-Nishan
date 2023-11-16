@@ -1,50 +1,25 @@
 import React from 'react'
+import "./button.css"
 
-const Button = ({bheight, bwidth, btext="Button", bgcolor="blue",imgSrc, imgHeight="25px", imgWidth="25px" } ) => {
+const Button = ({bheight, bwidth, btext="Button", bgcolor="blue",imgSrc, imgHeight="25px", imgWidth="25px", padding="10px", bradius="12px", hoverColor="aqua" } ) => {
   return (
     
     <>
-    <button className="custom-button" style={{background:bgcolor, height:bheight, width:bwidth, 
-      margin:"10px",
-      color:"white", 
-      padding:"10px", 
-      position:"relative",
-      display:"inline-flex",
-      alignItems:"center",
-      justifyContent:"center",
-      textAlign:"center",
-      textDecoration:"none",
-      verticalAlign:"middle",
-      cursor:"pointer",
-      userSelect:"none",
-      borderRadius:"0.4rem",
-      boxShadow: "0 5px #9999",
-      fontFamily:"Inter, sans-serif",
-      fontWeight:500,
-      border:"1px solid transparent"
-      }}
-
-      onMouseOver={(e) => {
-        e.target.style.backgroundColor = "#0066cc";
-        e.target.style.color = "black"; // Change text color on hover
-      }}
-
-      onMouseOut={(e) => {
-        e.target.style.backgroundColor = bgcolor;
-        e.target.style.color = "white"; // Revert text color on mouse out
-      }}>
-          {btext} 
-          {imgSrc && <img src={imgSrc} alt="Button Icon" style={{ margin: '5px', height:imgHeight, width:imgWidth }} />} </button>
+    <button className="button" style={{backgroundColor:bgcolor, height:bheight, width:bwidth, padding:padding ,borderRadius:bradius}}
+          
+          onMouseOver={(e) => {
+            e.target.style.backgroundColor = hoverColor;
+          }}
+    
+          onMouseOut={(e) => {
+            e.target.style.backgroundColor = bgcolor;
+          }}>
       
-      <style>
-        {`
-          .custom-button:active {
-            transform: scale(0.95);
-          }
-        `}
-      </style>
-    </>
+          {btext} 
+          {imgSrc && <img src={imgSrc} alt="Button Icon" style={{margin:"0 10px", height:imgHeight, width:imgWidth }} />} </button>
+      </>
   )
 }
 
 export default Button
+
